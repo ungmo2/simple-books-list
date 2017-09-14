@@ -45,4 +45,4 @@ Thumbs.db
 # etc
 mission.md
 /public
-.package-lock.json
+package-lock.json
