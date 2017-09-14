@@ -1,0 +1,48 @@
+@import "partial/_font";
+@import "partial/_body";
+
+// button 내의 i의 이벤트 발생 방지
+button > i {
+  pointer-events: none;
+}
+
+.table > thead {
+  & > tr > th {
+    height: 51px;
+    vertical-align: middle;
+
+    // #
+    &:first-child {
+      width: 10%;
+      text-align: center;
+    }
+    // title
+    &:nth-child(2) {
+      width: 40%;
+    }
+    // author
+    &:nth-child(3) {
+      width: 15%;
+    }
+    // price
+    &:nth-child(4) {
+      width: 15%;
+    }
+    //action
+    &:last-child {
+      width: 20%;
+    }
+  }
+}
+
+.table > tbody {
+  & > tr > th,
+  & > tr > td {
+    height: 51px;
+    vertical-align: middle;
+
+    &:first-child {
+      text-align: center;
+    }
+  }
+}
